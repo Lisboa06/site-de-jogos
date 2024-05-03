@@ -40,6 +40,7 @@
         padding: 10px;
         box-shadow: 0 0 10px #0000001a;
         z-index: 1000;
+        border-radius: 12px;
     }
 
     /* Estilos para o botão fechar */
@@ -69,26 +70,29 @@
 </style>
 </head>
 <body>
-<div class="conteudo">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos assumenda eos? Officiis et reprehenderit quisquam aliquid consectetur quidem excepturi! Accusamus facere ab odit provident doloribus ipsum omnis illo vitae?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quo animi amet officia voluptatem non vitae esse quos, saepe id, ab eos nihil cum porro veritatis magni possimus sapiente corporis!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur at alias corporis fugit quisquam nemo dolores est ullam sunt labore dolorum iure rerum, possimus cumque! Eum quo dicta quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga unde quos error eum, nulla ut eius qui expedita aliquam officiis explicabo neque, quisquam quam, praesentium hic nam? Quisquam, dolores.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore ratione provident reprehenderit eos temporibus obcaecati maxime. Unde nobis totam repellat nulla enim impedit nemo. Exercitationem corporis quasi non laborum!</p>
-</div>
-<!-- Ícone do carrinho -->
-<div class="cart-icon" onclick="toggleCartPopup()">
-    🛒
-    <div class="item-counter" id="itemCounter">0</div>
-</div>
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos assumenda eos? Officiis et reprehenderit quisquam aliquid consectetur quidem excepturi! Accusamus facere ab odit provident doloribus ipsum omnis illo vitae?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quo animi amet officia voluptatem non vitae esse quos, saepe id, ab eos nihil cum porro veritatis magni possimus sapiente corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur at alias corporis fugit quisquam nemo dolores est ullam sunt labore dolorum iure rerum, possimus cumque! Eum quo dicta quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga unde quos error eum, nulla ut eius qui expedita aliquam officiis explicabo neque, quisquam quam, praesentium hic nam? Quisquam, dolores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore ratione provident reprehenderit eos temporibus obcaecati maxime. Unde nobis totam repellat nulla enim impedit nemo. Exercitationem corporis quasi non laborum!</p>
+    </div>
+    <!-- Ícone do carrinho -->
+    <div>
+        <div class="cart-icon" onclick="toggleCartPopup()">
+            🛒
+            <!-- <div class="item-counter" id="itemCounter">0</div> -->
+        </div>
+        <!-- Pop-up do carrinho -->
+        <div class="cart-popup" id="cartPopup">
+            <span class="close-btn" onclick="toggleCartPopup()">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <p>Item 1: $10</p>
+            <p>Item 2: $15</p>
+            <p>Item 3: $20</p>
+        </div>
+    </div>
 
-<!-- Pop-up do carrinho -->
-<div class="cart-popup" id="cartPopup">
-    <span class="close-btn" onclick="toggleCartPopup()">&times;</span>
-    <h2>Carrinho de Compras</h2>
-    <p>Item 1: $10</p>
-    <p>Item 2: $15</p>
-    <p>Item 3: $20</p>
-</div>
+
 
 <script>
     var itemCount = 0; // Contador de itens
