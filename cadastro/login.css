@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     background-color: black;
     height: 100vh;
+    margin: 0px;
 }
 
 h1 {

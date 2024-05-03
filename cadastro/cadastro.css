@@ -2,55 +2,44 @@ body {
     font-family: sans-serif;
     background-color: black;
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
-
-h1 {
-    color: white;
-    margin: 6px 0 0;
-}
-
 
 p {
     color: #ffffff;
     text-align: center;
 }
 
-.criar-conta {
-    text-shadow: 0 0 10px #00000088;
-}
-.criar-conta a {
-    color: #090dff;
-    text-decoration: none;
-}
 .background {
     background-image: url(https://images2.alphacoders.com/134/1343198.png);
     background-position: center;
-    background-size: cover;}
-
+    background-size: cover;
+}
 .card {
+    background-color: #000000b4;
+    color: white;
+    padding: 10px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-#login {
     text-align: center;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    border-radius: 12px;
+    border: 1px solid #ccccccb9;
+    box-shadow: 0 0 12px #00000071;
 }
-.login, .sessao {
-    border: 1px solid #ffffff96;
-    padding: 16px;
+.card h1 {
+    margin: 0px;
+    text-shadow: 0 0 10px #0000004d;
+}
+.card img {
+    width: 100px;
     border-radius: 10px;
-    background-color: #000000b4;
-    backdrop-filter: blur(3px);
-    box-shadow: 0px 0px 12px #00000073;
-    margin: 11px;
 }
 
-    
 input.email, input.senha  {
     border-radius: 15px;
     border: none;
@@ -61,63 +50,29 @@ input.email, input.senha  {
     color: #ffffff;
     margin: 3px;
 }
+.card input[type=radio]:checked {
+    
+}
 
-input.entrar {
-    cursor: pointer;
+input.criar-conta {
+    background-color: #444444;
+    color: #ffffff;
     width: 130px;
     height: 30px;
+    cursor: pointer;
     border-radius: 80px;
     text-align: center;
     justify-content: center;
     border: none;
-    background-color: #505050;
-    color: #ffffff;
-}
-
-.esqueci-senha {
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8px 0 20px 0;
-    font-size: 13px;
-    
-}
-.esqueci-senha > div {
-    display: flex;
-    align-items: center;
-    
-}
-.esqueci-senha a {
-    color: #fcad04;
+    margin-top: 7px;
 }
 
 input.entrar:hover {
     background-color: #241801;
 }
 
-.sessao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.sessao a img{
-    width: 40px;
-}
-
-
 input::placeholder {
     color: white;
-}
-
-.caixa img {
-    width: 100px;
-    border-radius: 10px;
-}
-
-.input :focus {
-    outline: none;
 }
 
 .rodape {

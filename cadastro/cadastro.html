@@ -5,57 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tela de login</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Tela de Cadastro</title>
 </head>
-
 <body class="background">
-
-    <section class="card">
-        <div class="login" id="login">
-            <div class="caixa">
-                <img src="data:image/png;base64,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"
-                    alt="Não encontrada">
-                <h1>Login</h1>
-                <p>Acessar Conta</p>
-                <div class="Email">
-                    <input class="email" type="email" placeholder="Email">
-                </div>
-                <div class="Senha">
-                    <input class="senha" type="password" placeholder="Senha">
-                </div>
-
-                <div class="esqueci-senha">
-                    <div>
-                        <input type="checkbox">
-                        <label for="">Lembrar senha</label>
-                    </div>
-                    <a href="esqueci-senha.html">Esqueci senha</a>
-
-                </div>
-
-                <div class="Entrar">
-                    <input class="entrar" type="submit" value="Entrar">
-                </div>
-            </div>
-        </div>
-
-        <div class="sessao">
-            <p>Iniciar sessão com</p>
-            <div>
-                <a href="https://my.account.sony.com/sonyacct/signin/?client_id=cd91bf7c-ace3-4c02-8ba4-69b55bae5931&scope=psn%3As2s&response_type=code&redirect_uri=https%3A%2F%2Fsignin.rockstargames.com%2Ftpa%2Fnp%2Fcallback%3Fstate%3Db3a2eb67-9050-486f-8f9f-4aacbd171386%26cid%3Dsocialclub&cid=c0ef7452-a1bc-4523-9532-d8b77376ab6d&error=login_required&error_code=4165&no_captcha=true#/signin/input/id"><img src="img/pngegg.png""></a>
-                <a href="https://login.live.com/oauth20_authorize.srf?client_id=0000000048127AD7&scope=Xboxlive.signin+Xboxlive.offline_access&response_type=code&redirect_uri=https%3A%2F%2Fsignin.rockstargames.com%2Ftpa%2Fxbl%2Fcallback%3Fcid%3Dsocialclub&state=a0d48415-3eba-470d-8152-87583edef6a9"><img src="img/pngwing.com.png""></a>
-            </div>
-        </div>
-
-        <p class="criar-conta">Ainda não tem uma conta ? <a href="Cadastro.html">Clique aqui</a></p>
-
+    <section class="card">  
+            <img src="data:image/png;base64,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" alt="Não encontrada">
+            <h1>Cadastro</h1>
+            <p>Criar Conta</p>
+            <input class="email" type="email" placeholder="Email" required>
+            <input class="senha" type="password" placeholder="Senha" min="5" required>
+            <label for="homem">Homem</label>
+            <input type="radio" name="sexo" id="homem" checked>
+            <label for="mulher">Mulher</label>
+            <input type="radio" name="sexo" id="mulher">
+            <input class="criar-conta" type="submit" value="Criar conta">
+            <input type="date" name="" id="">
     </section>
-
-
-
     <footer class="rodape"> 2024 ROCKSTAR GAMES</footer>
-
 </body>
 
 </html>
