@@ -1,0 +1,239 @@
+/* @font-face {
+    font-family: 'playstation';
+    src: url('fontes/PsOld-vmPMD.ttf') format('truetype');
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Cabeçalho - Inicio */
+.cabecalho {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .rockstar-icon {
+    display: flex;
+    align-items: center;
+    /* background-color: gray; */
+}
+.cabecalho .rockstar-icon img {
+    height: 64px;
+}
+.cabecalho .rockstar-icon h1 {
+    font-size: 1.45em;
+    color: #c2c4ff;
+    text-shadow: 0 0 16px #00eeffc0;
+    display: none; /* Importante! mudar Displar para telas de PC */
+}
+
+.cabecalho .menu ul {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    list-style: none;
+}
+.cabecalho .menu ul a {
+    /* background-color: #c2c4ff; */
+    color: white;
+    padding: 10px 8px;
+    /* margin: 0 3px; */
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    
+}
+.cabecalho .menu ul a img {
+    height: 20px;
+    margin-right: 3px;
+    background-color: #ffffff85;
+}
+
+/* Cabeçalho - Fim */
+/* -------------- */
+/* Main - Inicio */
+/* Carrosel */
+.game-carousel {
+    background-color: #000000;
+    color: white;
+    background-image: url(img/capas/gta6-capa-1h7gcqluigx9e.png);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* box-shadow: inset 0 -10px 20px 33px black; */
+}
+.game-carousel .game-card {
+    background-color: #000000a8;
+    box-shadow: 0px 0px 20px 18px #000000b0;
+    backdrop-filter: blur(2px);
+    position: relative;
+    top: 30%;
+    padding: 16px;
+    
+}
+.game-carousel .game-card .game-logo picture {
+    /* background-color: #c2c4ff; */
+    width: max-content;
+}
+/* .game-carousel .game-card .game-description p {
+    margin: 0 0 16px;
+} */
+.game-carousel .game-card .game-description a {
+    background-color: #161616;
+    color: white;
+    padding: 6px;
+    margin-top: 9px;
+    border-radius: 10px;
+    border: 1px solid #6b6b6b79;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+.game-carousel .game-card .game-description a:hover {
+    text-decoration: underline;
+}
+.game-carousel .game-card .game-description a:active {
+    scale: 0.97;
+}
+/* Jogos à venda */
+.cart-popup {
+    width: 50px;
+    height: 50px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cart-popup {
+    /* display: none; */
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 50px;
+    background-color: #bebebe;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px #0000001a;
+    z-index: 10;
+}
+.close-btn {
+    cursor: pointer;
+    color: #888;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Estilos para o sub-pop-up do contador de itens */
+.item-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+section.shop-cards {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 90vh;
+    box-shadow: 0px -10px 16px 10px black;
+    text-align: center;
+}
+.shop-cards > h1 {
+    text-align: center;
+}
+
+.shop-cards > div.game {
+    background-color: #313131;
+    width: calc(200px + 45%);
+    margin: 10px auto;
+    padding: 14px;
+    border-radius: 16px;
+    border: 1px solid #ffffff52;
+}
+.shop-cards > div.game > img {
+    width: 150px;
+}
+.shop-cards > div.game > h1 {
+    text-shadow: 0px 0px 6px #000000;
+}
+.shop-cards > div.game > p {
+    text-align: left;
+    line-height: 22px;
+}
+.shop-cards > div.game > h2 {
+    text-align: left;
+}
+.shop-cards > div.game > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shop-cards > div.game > ul a {
+    color: #e0feff;
+    margin: 12px 0 0;
+    text-decoration: none;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    cursor: default;
+    text-shadow: 0px 0px 8px #83deffa1;
+}
+.shop-cards > div.game > ul a img {
+    height: 26px;
+}
+
+div.game .buy-btn {
+    background-color: black;
+    color: white;
+    margin: 12px auto 0;
+    padding: 8px;
+    border: 1px solid #ffffff9a;
+    border-radius: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+div.game .buy-btn:active {
+    scale: .97;
+}
+
+div.game .buy-btn img {
+    height: 20px;
+}
+/* Main - Fim */

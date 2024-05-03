@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="import" href="fontes/PsBold-2Oy2w.ttf">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="rockstar-icon">
+            <img src="img/icons/icons-rockstar-games.png" alt="Icone Inicial">
+            <h1>GRAND THEFT AUTO</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#"><img src="img/icons/building-home-house-main-menu.png" alt="">Home</a></li>
+                <li><a href="#"><img src="img/icons/joystick_game.png" alt="">Jogos</a></li>
+                <li><a href="#"><img src="img/icons/chat_suport_icon.png" alt="">Carrinho</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="game-carousel"> <!-- Imagem de fundo na Section https://www.youtube.com/watch?v=Pzx0jkIHRfY -->
+            <div class="game-card">
+                <div class="game-logo">
+                    <img src="img/pngwing.com.png" >
+                </div>
+                <div class="game-description">
+                    <h1>Grand Theft Auto VI - Veja o Primeiro Trailer agora</h1>
+                    <p>Grand Theft Auto VI vai para o estado de Leonida, que abriga as ruas iluminadas pelas luzes neon de Vice City e arredores, na maior e mais imersiva evolução da franquia Grand Theft Auto. Disponível em 2025 para PlayStation 5 e Xbox Series X|S.</p>
+                    <a href="#">Assistir Vídeo</a>
+                </div>
+            </div>
+        </section>
+        <section class="shop-cards">
+            <h1>Compre Já</h1>
+            <div>
+                <div class="cart-icon" onclick="cartPopup()">
+                    🛒
+                <div class="item-counter" id="itemCounter">0</div>
+                </div>
+                <div class="cart-popup" id="cartPopup">
+                    <span class="close-btn" onclick="cartPopup()">&times;</span>
+                    <h2>Carrinho de Compras</h2>
+                    <p>Item 1: R$49,99</p>
+                    <p>Item 2: R$150,00</p>
+                    <p>Item 3: R$200,00</p>
+                </div>
+            </div>
+
+            <div class="game">
+                <img src="img/pngwing.com.png" alt="GTA 5">
+                <h1>Grand Theft Auto V</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore corporis atque, dignissimos dolorem illo sequi maxime animi at nulla exercitationem hic laudantium nihil iusto aspernatur aut eligendi tempore quod.</p>
+                <h2>Disponível para:</h2>
+                <ul>
+                    <li><a href="#" class="ps-font"><img src="img/icons/shop-card/logotipo-do-playstation.png" alt=""> PS4</a></li>
+                    <li><a href="#" class="ps-font"><img src="img/icons/shop-card/logotipo-do-playstation.png" alt=""> PS5</a></li>
+                    <li><a href="#"><img src="img/icons/shop-card/monitor.png" alt=""> PC</a></li>
+                    <li><a href="#" class="xbox-font"><img src="img/icons/shop-card/logotipo-do-xbox.png" alt=""> Xbox</a></li>
+                </ul>
+                <button class="buy-btn"><img src="img/icons/shop-card/vista-lateral-vazia-do-carrinho-de-compras.png">Comprar</button>
+            </div>
+            <div class="game">
+                <img src="img/pngwing.com.png" alt="GTA 5">
+                <h1>Grand Theft Auto V</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore corporis atque, dignissimos dolorem illo sequi maxime animi at nulla exercitationem hic laudantium nihil iusto aspernatur aut eligendi tempore quod.</p>
+                <h2>Disponível para:</h2>
+                <ul>
+                    <li><a href="#" class="ps-font"><img src="img/icons/shop-card/logotipo-do-playstation.png" alt=""> PS4</a></li>
+                    <li><a href="#" class="ps-font"><img src="img/icons/shop-card/logotipo-do-playstation.png" alt=""> PS5</a></li>
+                    <li><a href="#"><img src="img/icons/shop-card/monitor.png" alt=""> PC</a></li>
+                    <li><a href="#" class="xbox-font"><img src="img/icons/shop-card/logotipo-do-xbox.png" alt=""> Xbox</a></li>
+                </ul>
+                <button class="buy-btn"><img src="img/icons/shop-card/vista-lateral-vazia-do-carrinho-de-compras.png">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+         
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

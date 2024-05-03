@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop-up de Carrinho de Compras</title>
+<style>
+    /* Estilos para o ícone do carrinho */
+    body {
+        height: 100vh;
+    }
+    .conteudo p {
+        border: 1px solid black;
+        margin: 50px 20px;
+        height: 200px;
+    }
+    .cart-icon {
+        width: 50px;
+        height: 50px;
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    
+    /* Estilos para o pop-up do carrinho */
+    .cart-popup {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 0 10px #0000001a;
+        z-index: 1000;
+    }
+
+    /* Estilos para o botão fechar */
+    .close-btn {
+        cursor: pointer;
+        color: #888;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    /* Estilos para o sub-pop-up do contador de itens */
+    .item-counter {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+</style>
+</head>
+<body>
+<div class="conteudo">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos assumenda eos? Officiis et reprehenderit quisquam aliquid consectetur quidem excepturi! Accusamus facere ab odit provident doloribus ipsum omnis illo vitae?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quo animi amet officia voluptatem non vitae esse quos, saepe id, ab eos nihil cum porro veritatis magni possimus sapiente corporis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur at alias corporis fugit quisquam nemo dolores est ullam sunt labore dolorum iure rerum, possimus cumque! Eum quo dicta quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga unde quos error eum, nulla ut eius qui expedita aliquam officiis explicabo neque, quisquam quam, praesentium hic nam? Quisquam, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore ratione provident reprehenderit eos temporibus obcaecati maxime. Unde nobis totam repellat nulla enim impedit nemo. Exercitationem corporis quasi non laborum!</p>
+</div>
+<!-- Ícone do carrinho -->
+<div class="cart-icon" onclick="toggleCartPopup()">
+    🛒
+    <div class="item-counter" id="itemCounter">0</div>
+</div>
+
+<!-- Pop-up do carrinho -->
+<div class="cart-popup" id="cartPopup">
+    <span class="close-btn" onclick="toggleCartPopup()">&times;</span>
+    <h2>Carrinho de Compras</h2>
+    <p>Item 1: $10</p>
+    <p>Item 2: $15</p>
+    <p>Item 3: $20</p>
+</div>
+
+<script>
+    var itemCount = 0; // Contador de itens
+
+    // Função para mostrar ou esconder o pop-up do carrinho
+    function toggleCartPopup() {
+        var popup = document.getElementById("cartPopup");
+        if (popup.style.display === "none") {
+            popup.style.display = "block";
+        } else {
+            popup.style.display = "none";
+        }
+    }
+
+    // Função para adicionar um item ao carrinho e atualizar o contador
+    function addItemToCart() {
+        itemCount++;
+        document.getElementById("itemCounter").textContent = itemCount;
+    }
+</script>
+
+</body>
+</html>

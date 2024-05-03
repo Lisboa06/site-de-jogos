@@ -1,0 +1,28 @@
+@media screen and (min-width: 576px) { /* Small screen / PHONE */
+    /* Cabeçalho - Inicio */
+    
+    /* Main - Inicio */
+    .cabecalho .rockstar-icon h1 {
+        display: inline-block;
+        font-size: 1.4em;
+    }
+    
+    .game-carousel {
+        background-image: url(img/capas/gta-6-car-sunset-hd-wallpaper.jpg);
+        background-position: center;
+    }
+
+    .game-carousel .game-card {
+        /* background-color: #0000008f; */
+        background: linear-gradient(120deg, #242424de, #00000083);
+        width: calc(140px + 20%);
+        margin: auto;
+        border: 1px solid #ffffff88;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #000000b2;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) { /* Medium screen / TABLET */
+
+}
