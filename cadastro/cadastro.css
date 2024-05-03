@@ -26,29 +26,29 @@ p {
     background-image: url(https://images2.alphacoders.com/134/1343198.png);
     background-position: center;
     background-size: cover;}
-    
-    .card {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #login {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-    }
-    .login, .sessao {
-        border: 1px solid #ffffff96;
-        padding: 16px;
-        border-radius: 10px;
-        background-color: #000000b4;
-        backdrop-filter: blur(3px);
-        box-shadow: 0px 0px 12px #00000073;
-        margin: 11px;
-    }
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.login, .sessao {
+    border: 1px solid #ffffff96;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #000000b4;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 12px #00000073;
+    margin: 11px;
+}
 
     
 input.email, input.senha  {
@@ -57,8 +57,8 @@ input.email, input.senha  {
     width: 250px;
     height: 40px;
     padding-left: 15px;
-    background-color: rgb(52, 52, 53);
-    color: rgb(255, 255, 255);
+    background-color: #343435;
+    color: #ffffff;
     margin: 3px;
 }
 
@@ -70,12 +70,12 @@ input.entrar {
     text-align: center;
     justify-content: center;
     border: none;
-    background-color: rgb(80, 80, 80);
-    color: rgb(255, 255, 255);
+    background-color: #505050;
+    color: #ffffff;
 }
 
 .esqueci-senha {
-    color: white;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,12 +121,12 @@ input::placeholder {
 }
 
 .rodape {
-    color: white;
+    color: #ffffff;
     padding: 10px;
     position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px #000000;
     text-align: center;
 }
