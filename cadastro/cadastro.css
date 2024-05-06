@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family:  Courier, sans-serif;
     background-color: black;
     height: 100vh;
     margin: 0px;
@@ -17,13 +17,20 @@ p {
     background-size: cover;
 }
 .card {
-    background-color: #000000b4;
-    color: white;
-    padding: 10px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.card > form  {
+    background-color: #000000b4;
+    color: white;
+    max-width: min-content;
+    
+    margin-bottom: 16px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -31,28 +38,40 @@ p {
     border: 1px solid #ccccccb9;
     box-shadow: 0 0 12px #00000071;
 }
-.card h1 {
+.card form h1 {
     margin: 0px;
     text-shadow: 0 0 10px #0000004d;
 }
-.card img {
+.card form p {
+    margin: 5px 0 16px;
+}
+.card form img {
     width: 100px;
     border-radius: 10px;
 }
 
-input.email, input.senha  {
+input.nome, input.email, input.senha, input.senha-confirmar  {
     border-radius: 15px;
     border: none;
     width: 250px;
     height: 40px;
     padding-left: 15px;
-    background-color: #343435;
+    background-color: #292929;
     color: #ffffff;
-    margin: 3px;
+    margin: 3px 0px;
+    box-shadow: 0 0 4px #00000048;
+    border: 1px solid #5c5c5c83;
 }
-.card input[type=radio]:checked {
+
+.card > p {
+    text-align: center;
+    background-color: #00000048;
+    border-radius: 10px;
+    padding: 4px;
+}
+/* .card input[type=radio]:checked {
     
-}
+} */
 
 input.criar-conta {
     background-color: #444444;
