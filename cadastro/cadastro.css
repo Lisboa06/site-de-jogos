@@ -49,7 +49,9 @@ p {
     width: 100px;
     border-radius: 10px;
 }
-
+input::placeholder {
+    color: white;
+}
 input.nome, input.email, input.senha, input.senha-confirmar  {
     border-radius: 15px;
     border: none;
@@ -67,31 +69,31 @@ input.nome, input.email, input.senha, input.senha-confirmar  {
     text-align: center;
     background-color: #00000048;
     border-radius: 10px;
-    padding: 4px;
+    padding: 6px;
 }
-/* .card input[type=radio]:checked {
-    
-} */
 
 input.criar-conta {
     background-color: #444444;
     color: #ffffff;
     width: 130px;
     height: 30px;
+    margin-top: 7px;
+
     cursor: pointer;
     border-radius: 80px;
     text-align: center;
     justify-content: center;
     border: none;
-    margin-top: 7px;
+    font-family: sans-serif;
 }
-
-input.entrar:hover {
-    background-color: #241801;
+.logar {
+    font-family: sans-serif;
 }
-
-input::placeholder {
-    color: white;
+.logar a {
+    color: #f0f8ff;
+}
+.logar a:hover {
+    color: #d6dce2;
 }
 
 .rodape {

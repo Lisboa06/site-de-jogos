@@ -16,13 +16,7 @@ p {
     text-align: center;
 }
 
-.criar-conta {
-    text-shadow: 0 0 10px #00000088;
-}
-.criar-conta a {
-    color: #090dff;
-    text-decoration: none;
-}
+
 .background {
     background-image: url(https://images2.alphacoders.com/134/1343198.png);
     background-position: center;
@@ -107,7 +101,6 @@ input.entrar:hover {
     width: 40px;
 }
 
-
 input::placeholder {
     color: white;
 }
@@ -120,6 +113,20 @@ input::placeholder {
 .input :focus {
     outline: none;
 }
+.criar-conta {
+    /* text-shadow: 0 0 10px #00000088; */
+    text-align: center;
+    background-color: #00000048;
+    border-radius: 10px;
+    padding: 6px;
+}
+.criar-conta a {
+    color: #f0f8ff;
+}
+.criar-conta a:hover {
+    color: #d6dce2;
+}
+
 
 .rodape {
     color: #ffffff;
