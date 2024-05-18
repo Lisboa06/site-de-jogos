@@ -10,19 +10,112 @@ body {
 
 .produto-card {
     text-align: center;
+    /* padding: 0 7px; */
 }
-
-.produto-card-titulo {
-    margin: 12px 0 9px;
+.produto {
+    background-color: #12121f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
 }
-.produto-card-subtitulo {
+.produto-img {
+    box-shadow: 3px 3px 10px #0000006e;
+    height: 150px;
+}
+.produto-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.produto-info > div {
+    text-align: left;
+    margin-left: 10px;
+}
+.produto-info .produto-titulo {
+    margin: 10px 0 9px;
+    font-family: monospace;
+}
+.produto-info .produto-subtitulo {
     margin-bottom: 9px;
 }
 
 .precos {
-    margin: 5px;
+    margin: 14px 0;
     font-size: 1.4em;
+    font-weight: bold;
 }
 .precos aside {
-    font-size: .65em;
+    font-size: .6em;
+    color: #8a8a8a;
+    font-weight: normal;
+}
+
+        /* Informações de compra */
+
+.compra-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.compra-btn {
+    background-color: #007531;
+    color: #ffffff;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 0 auto 5px;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    text-transform: uppercase;
+}
+.compra-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    filter: brightness(95%);
+}
+
+.pagamento-tipos {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 2px;
+}
+.pagamento-tipos li img {
+    width: 26px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+    margin: 0 2px;
+} 
+.pagamento-tipos li p {
+    display: none;
+}
+
+.produto-info-aside {
+    margin-top: 12px;
+}
+.produto-info-aside .border {
+    width: 94%;
+    height: 1px;
+    margin: 7px auto;
+    background-color: #bbbbbb;
+}
+.produto-info-aside-sobre {
+    margin-bottom: 12px;
+}
+.produto-info-aside-sobre p {
+    margin: 6px auto;
+    text-align: left;
+    line-height: 1.1.2em;
+}
+
+/* --Rodapé-- */
+.rodape {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
