@@ -1,4 +1,28 @@
 * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.produto-card {
+    text-align: center;
+}
+
+.produto-card-titulo {
+    margin: 12px 0 9px;
+}
+.produto-card-subtitulo {
+    margin-bottom: 9px;
+}
+
+.precos {
+    margin: 5px;
+    font-size: 1.4em;
+}
+.precos aside {
+    font-size: .65em;
 }
