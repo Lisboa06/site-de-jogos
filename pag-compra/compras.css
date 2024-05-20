@@ -6,6 +6,12 @@
 
 body {
     font-family: sans-serif;
+    background-color: #12121f;
+    color: #f0ebe6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .produto-card {
@@ -13,8 +19,6 @@ body {
     /* padding: 0 7px; */
 }
 .produto {
-    background-color: #12121f;
-    color: white;
     display: flex;
     flex-direction: column;
     padding: 8px 12px;
@@ -71,7 +75,7 @@ body {
 }
 .compra-btn:hover {
     cursor: pointer;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     filter: brightness(95%);
 }
 
@@ -94,28 +98,33 @@ body {
     display: none;
 }
 
-.produto-info-aside {
+.produto-aside {
     margin-top: 12px;
+    padding: 0 10px;
 }
-.produto-info-aside .border {
-    width: 94%;
+.produto-aside .border {
+    width: 88%;
     height: 1px;
     margin: 7px auto;
     background-color: #bbbbbb;
 }
-.produto-info-aside-sobre {
-    margin-bottom: 12px;
+.produto-aside-sobre {
+    margin-top: 12px;
 }
-.produto-info-aside-sobre p {
+.produto-aside-sobre p {
     margin: 6px auto;
     text-align: left;
-    line-height: 1.1.2em;
+    line-height: 1.25em;
 }
 
 /* --Rodapé-- */
 .rodape {
     background-color: black;
     color: white;
+    width: 100%;
     padding: 10px 0;
     text-align: center;
+    bottom: 0%;
+    /* position: absolute; */
+    
 }

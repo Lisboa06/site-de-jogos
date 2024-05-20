@@ -1,0 +1,10 @@
+
+@media (min-width: 600px) {
+    .produto-card {
+        max-width: 580px;
+        margin: 15px auto 0;
+    }    
+    .produto-aside-sobre p {
+        text-align: center;
+    }
+}
