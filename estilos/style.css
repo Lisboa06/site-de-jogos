@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 8px;
+  font-family: sans-serif;
+}
+
+ .socais {
+  width: 25%;
+}
+
+.logo img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  text-align: left;
+}
+
+.menu nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 18px;
+}
+.menu nav a:hover {
+  border-bottom: 1px solid rgb(236, 146, 11);
+  
+  
+  .sociais button {
+    background-color: #0016e000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px;
+    filter: drop-shadow(0 0 11px #ffffff60);
+    transition: 0.4s;
+  }
+  .sociais button:hover {
+    filter: drop-shadow(0 0 12px #ffffffc5);
+    transition: 0.4s;
+  }
+  .sociais button img{
+    width: 25px;
+    
+  }
+  
+  .cabecalho .logo {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    padding: 14px;
+  }
+  
+  .cabecalho .menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+} */
+  
+/* BOOTSTRAP CABEÇALHO - Inicio */
+.navbar {
+  padding: 0 !important;
+  text-align: center;
+}
+.navbar-toggler {
+  background-color: white !important;
+}
+
+.container-fluid {
+  background-color: #0f041d !important;
+}
+
+.container-fluid .logo{
+  width: 50px;
+}
+
+.nav-item .nav-link {
+  color: white !important;
+  margin: 2px;
+  border-radius: 5px;
+}
+.nav-item .nav-link:hover {
+  background-color: #ffffff11;
+  text-shadow: 0 0 7px #ffffff69;
+}
+.navbar-text {
+  /* background-color: #e8e8e8; */
+  text-align: right !important;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.navbar-text a img{
+  width: 36px !important;
+  margin: auto 5px;
+}
+
+/* BOOTSTRAP CABEÇALHO - Fim */
+
+
+
+.home {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  font-family: sans-serif;
+  color: white;
+}
+
+
+.home .imagem-fundo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.home::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #00000081, #00000080);
+}
+
+.home .informacoes {
+  position: absolute;
+  z-index: 1;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 780px;
+}
+
+.home .informacoes img {
+  max-width: 130px;
+}
+
+.home .informacoes .titulo {
+  font-size: 44px;
+  text-shadow: 0 0 8px #0000007a;
+}
+
+.home .informacoes .texto {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.bt-assistir-trailer {
+  background-color: rgba(255, 255, 255, .1);
+  border: 0.5px solid #fff;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 0;
+  text-transform: uppercase;
+  width: 50%;
+  transition: all .3s ease-in;
+  text-decoration: none;
+}
+
+.bt-assistir-trailer {
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.bt-assistir-trailer:hover {
+  background-color: #fff;
+  color: #000;
+}
