@@ -171,13 +171,15 @@ header {
 .card {
   background: #14111a;
   color: #e6e6e2;
+  display: flex;
+  justify-content: space-between;
   border: 1px solid #ffffff81;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 1px 1px 12px 5px #000000;
-  transition: transform 0.2s;
   width: 300px;
   text-align: center;
+  transition: transform 0.2s;
 }
 .card .playstation, .card .xbox, .card .pc {
   /* display: inline-block; */
@@ -208,7 +210,7 @@ header {
   font-size: 1.2em;
   font-weight: bold;
   color: #FFAB00;
-  margin: 0.1em 0;
+  margin: 0 0 0.5em;
 }
 
 .card .buy-icon-button {
