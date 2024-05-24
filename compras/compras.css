@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
 }
 
 .produto-card {
@@ -22,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 8px 12px;
+    margin-top: 6vh;
 }
 .produto-img {
     box-shadow: 3px 3px 10px #0000006e;
@@ -38,7 +40,8 @@ body {
 }
 .produto-info .produto-titulo {
     margin: 10px 0 9px;
-    font-family: monospace;
+    font-size: 1.5em;
+    /* font-family: monospace; */
 }
 .produto-info .produto-subtitulo {
     margin-bottom: 9px;
@@ -62,6 +65,7 @@ body {
     flex-direction: column;
     margin-top: 10px;
 }
+
 .compra-btn {
     background-color: #007531;
     color: #ffffff;
@@ -72,11 +76,15 @@ body {
     display: block;
     border: none;
     text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
 }
 .compra-btn:hover {
     cursor: pointer;
     /* text-decoration: underline; */
-    filter: brightness(95%);
+    /* filter: brightness(105%); */
+    background-color: #008a39;
+    transition: .3s;
 }
 
 .pagamento-tipos {
@@ -91,7 +99,7 @@ body {
     width: 26px;
     background-color: #e9e9e9;
     border-radius: 5px;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px #ffffff5d;
     margin: 0 2px;
 } 
 .pagamento-tipos li p {
@@ -119,12 +127,13 @@ body {
 
 /* --Rodapé-- */
 .rodape {
-    background-color: black;
+    background-color: #12111a;
     color: white;
     width: 100%;
     padding: 10px 0;
     text-align: center;
     bottom: 0%;
+    line-height: 1.5em;
     /* position: absolute; */
-    
+    box-shadow: -5px 0 12px #0000004b;
 }

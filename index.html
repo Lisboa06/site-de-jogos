@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/padrao.css">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
@@ -34,7 +35,7 @@
     </header> -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="img/icons8-rockstar-games-96.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img class="logo" src="img/icon-rockstar-games.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,7 +45,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Jogos</a>
+                <a class="nav-link" href="#cards">Jogos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Conta</a>
@@ -62,8 +63,8 @@
         </div>
       </nav>
     
-    <main class="home" id="home">
-        <img class="imagem-fundo" src="https://i.redd.it/y1mic3i5yh4c1.png" alt="capa do jogo">
+    <main class="home" id="home" >
+        <a href=""><img class="imagem-fundo" src="https://i.redd.it/y1mic3i5yh4c1.png" alt="capa do jogo"></a>
         <div class="informacoes">
             <div class="lista-de-jogos">
                 <img src="img/Logo marca gta 6.png" alt="logo gta 6">
@@ -79,36 +80,31 @@
         </div>
     </main>
 
-    <section class="cards">
+    <section class="cards" id="cards">
       <div class="card">
-          <img src="img/gun-skull-monkey-mask-rockstar-hd-wallpaper-preview.jpg" alt="Game Logo">
+          <img src="img/cards/Grand_Theft_Auto_V_capa.png" alt="Game Logo">
           <h3>Grand Thelf Auto V</h3>
-          <p>Descrição curta do jogo 1.</p>
+          <p><span class="playstation">PS4</span> <span class="playstation">PS5</span> <span class="pc">PC</span> <span class="xbox">Xbox</span></p>
           <p class="price">R$ 99,99</p>
-          <button class="buy-icon-button">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Comprar
-          </button>
+          <a href="compras/gtav.html" class="buy-icon-button">Comprar</a>
       </div>
       <div class="card">
-          <img src="img/601980.jpg" alt="Game Logo">
-          <h3>Grand Thelf Auto IV</h3>
-          <p>Descrição curta do jogo 2.</p>
+          <img src="img/cards/Maxpayne3.jpg" alt="Game Logo">
+          <h3>Max payne 3</h3>
+          <p><span class="playstation">PS4</span> <span class="pc">PC</span> <span class="xbox">Xbox</span></p>
           <p class="price">R$ 199,99</p>
-          <button class="buy-icon-button">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Comprar
-          </button>
+          <a href="" class="buy-icon-button">Comprar</a>
       </div>
       <div class="card">
-          <img src="img/desktop-wallpaper-grand-theft-auto-the-3d-trilogy-iii-vc-sa-all-final-missions-and-end-credits-gta-trilogy.jpg" alt="Game Logo">
-          <h3>Grand Thelf Auto Trilogy</h3>
-          <p>Descrição curta do jogo 3.</p>
+          <img src="img/cards/Red_Dead_Redemption_2.png" alt="Game Logo">
+          <h3>Red Dead Redemption_2</h3>
+          <p><span class="playstation">PS4</span> <span class="pc">PC</span> </p>
           <p class="price">R$ 149,99</p>
-          <button class="buy-icon-button">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Comprar
-          </button>
+          <a href="" class="buy-icon-button">Comprar</a>
       </div>
     </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
