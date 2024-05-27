@@ -219,7 +219,7 @@ header {
   padding: 0.5em 1em;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 6px black;
+  text-shadow: 0 0 9px #00000098;
   text-decoration: none;
   border: none;
   font-size: 1em;
