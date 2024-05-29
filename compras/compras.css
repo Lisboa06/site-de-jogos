@@ -135,5 +135,6 @@ body {
     bottom: 0%;
     line-height: 1.5em;
     /* position: absolute; */
+    border-top: 1px solid #303030;
     box-shadow: -5px 0 12px #0000004b;
 }
