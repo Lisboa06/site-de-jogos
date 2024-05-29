@@ -191,13 +191,13 @@ header {
   border-radius: 20px;
 }
 
-.card img {
+.card > img {
   width: 100%;
   height: 330px;
   object-fit: cover;
 }
 
-.card h3 {
+.card > h3 {
   font-size: 1.5em;
   margin: 0.25em 0 0;
 }

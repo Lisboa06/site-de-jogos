@@ -95,6 +95,16 @@ body {
     list-style: none;
     gap: 2px;
 }
+
+.carousel {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.carousel-item .d-block{
+    height: 330px !important;
+    object-fit: cover;
+}
 .pagamento-tipos li img {
     width: 26px;
     background-color: #e9e9e9;
