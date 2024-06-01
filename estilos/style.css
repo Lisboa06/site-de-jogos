@@ -1,3 +1,8 @@
+:root {
+  --neon-color-default: #d3ffe0af;
+  --neon-color: #00d9ff9d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +82,90 @@
 }
 
 /* CARDS */
+.cards-main-title {
+  font-size: 2.2em;
+  background-color: var(--bg-color1);
+  color: white;
+  margin: 0;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+}
+.neon-text {
+  font-family: 'Arial', sans-serif;
+  text-shadow: 
+      0 0 5px var(--neon-color-default), 
+      0 0 10px var(--neon-color-default), 
+      0 0 20px var(--neon-color-default), 
+      0 0 40px var(--neon-color), 
+      0 0 80px var(--neon-color), 
+      0 0 90px var(--neon-color), 
+      0 0 100px var(--neon-color), 
+      0 0 150px var(--neon-color);
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+      text-shadow: 
+          0 0 5px var(--neon-color-default), 
+          0 0 10px var(--neon-color-default), 
+          0 0 20px var(--neon-color-default), 
+          0 0 40px var(--neon-color), 
+          0 0 80px var(--neon-color), 
+          0 0 90px var(--neon-color), 
+          0 0 100px var(--neon-color), 
+          0 0 150px var(--neon-color);
+  }
+  to {
+      text-shadow: 
+          0 0 10px var(--neon-color-default), 
+          0 0 20px var(--neon-color-default), 
+          0 0 30px var(--neon-color), 
+          0 0 50px var(--neon-color), 
+          0 0 100px var(--neon-color), 
+          0 0 150px var(--neon-color), 
+          0 0 200px var(--neon-color), 
+          0 0 300px var(--neon-color);
+  }
+}
+.blink {animation: blink 3s infinite;}
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  89% {
+      opacity: 1;
+  }
+  92% {
+      opacity: .1;
+  }
+  95%{
+      opacity: 1;
+  }
+  98%{
+      opacity: 0.1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.blink2 {animation: blink2 4.5s infinite;}
+@keyframes blink2 {
+  0% {
+      opacity: 1;
+  }
+  45% {
+      opacity: 1;
+  }
+  48% {
+      opacity: 0.1;
+  }
+  50%, 100% {
+      opacity: 1;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
