@@ -81,94 +81,130 @@
     </main>
 
     <section class="cards" id="cards">
-      <div class="card">
-          <img src="img/cards/Grand_Theft_Auto_V_capa.png" alt="Game Logo"
-          data-toggle="modal" data-target="#gtav">
-          <h3>Grand Theft Auto V</h3>
-          <p><span class="playstation">PS4</span> <span class="playstation">PS5</span> <span class="pc">PC</span> <span class="xbox">Xbox</span></p>
-          <p class="price">R$159,90</p>
-          <a href="compras/gtav.html" class="buy-icon-button">Comprar</a>
-      </div>
-
-<div class="modal fade" id="gtav" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Image Carousel</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="https://via.placeholder.com/500x300" alt="First slide">
+      <div class="card" onclick="openModal('modal-rdr2')">
+        <img src="img/cards/Red_Dead_Redemption_2.png" alt="Game Logo">
+        <h3>Red Dead Redemption 2</h3>
+        <p>
+          <span class="pc">PC</span> <span class="playstation">PS4</span> <span class="xbox">Xbox</span>
+        </p>
+        <p class="price">R$149,99</p>
+        <a href="compras/rdr2.html" class="buy-icon-button">Comprar</a>
+      </div> <!-- CARD - Red Dead Redemption 2 -->
+      <div id="modal-rdr2" class="modal"><!--  MODAL - Red Dead Redemption 2 -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-rdr2')">&times;</span>
+          <div class="carousel-container">
+            <span class="prev" onclick="changeSlide(-1, 'rdr2')">&#10094;</span>
+            <div class="carousel" id="carousel-rdr2">
+              <img src="compras/carrosel/rdr2/red-dead-2.webp" alt="Image 1">
+              <img src="compras/carrosel/rdr2/Red-Dead-Online-–-Community-Update-–-7-7-2022-–-Image-1.webp" alt="Image 2">
+              <img src="compras/carrosel/rdr2/red-dead-redemption-2-1540300058.jpg" alt="Image 3">
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://via.placeholder.com/500x300" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://via.placeholder.com/500x300" alt="Third slide">
-            </div>
+            <span class="next" onclick="changeSlide(1, 'rdr2')">&#10095;</span>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+      </div><!-- MODAL - Red Dead Redemption 2 -->
 
-      <div class="card">
-          <img src="img/cards/Maxpayne3.jpg" alt="Game Logo">
-          <h3>Max Payne 3</h3>
-          <p><span class="playstation">PS4</span> <span class="pc">PC</span> <span class="xbox">Xbox</span></p>
-          <p class="price">R$105,00</p>
-          <a href="compras/maxpayne3.html" class="buy-icon-button">Comprar</a>
+      <div class="card" onclick="openModal('modal-gtav')">
+        <img src="img/cards/Grand_Theft_Auto_V_capa.png" alt="Game Logo">
+        <h3>Grand Theft Auto V</h3>
+        <p>
+          <span class="playstation">PS4</span> <span class="playstation">PS5</span> <span class="pc">PC</span> <span class="xbox">Xbox</span>
+        </p>
+        <p class="price">R$159,90</p>
+        <a href="compras/gtav.html" class="buy-icon-button">Comprar</a>
       </div>
-      <div class="card">
-          <img src="img/cards/Red_Dead_Redemption_2.png" alt="Game Logo">
-          <h3>Red Dead Redemption 2</h3>
-          <p>
-            <span class="pc">PC</span> <span class="playstation">PS4</span> <span class="xbox">Xbox</span>
-          </p>
-          <p class="price">R$149,99</p>
-          <a href="compras/rdr2.html" class="buy-icon-button">Comprar</a>
-      </div>
-      <div class="card">
-          <img src="img/cards/GTATrilogy.jpg" alt="Game Logo">
-          <h3>Grand Theft Auto: The Trilogy</h3>
-          <p>
-            <span class="pc">PC</span> <span class="playstation">PS4</span> <span class="playstation">PS5</span> <span class="xbox">Xbox</span>
-          </p>
-          <p class="price">R$320,00</p>
-          <a href="compras/gta-trilogy.html" class="buy-icon-button">Comprar</a>
-      </div>
-      <div class="card">
+      <div id="modal-gtav" class="modal"> <!-- Modal de GTA V - inicio -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-gtav')">&times;</span>
+          <div class="carousel-container">
+            <span class="prev" onclick="changeSlide(-1, 'gtav')">&#10094;</span>
+            <div class="carousel" id="carousel-gtav">
+              <img src="compras/carrosel/gtav/grand-theft-auto-v.webp" alt="Image 1">
+              <img src="compras/carrosel/gtav/gta-v-how-to-play-grand-theft-auto-v-windows.jpg" alt="Image 2">
+              <img src="compras/carrosel/gtav/gta5trio_hed.jpg" alt="Image 3">
+            </div>
+            <span class="next" onclick="changeSlide(1, 'gtav')">&#10095;</span>
+          </div>
+        </div>
+      </div> <!-- Modal de GTA V - fim -->
+
+      <div class="card" onclick="openModal('modal-maxpayne3')">
+        <img src="img/cards/Maxpayne3.jpg" alt="Game Logo">
+        <h3>Max Payne 3</h3>
+        <p>
+          <span class="playstation">PS4</span> <span class="pc">PC</span> <span class="xbox">Xbox</span>
+        </p>
+        <p class="price">R$105,00</p>
+        <a href="compras/maxpayne3.html" class="buy-icon-button">Comprar</a>
+      </div><!-- CARD - Max Payne 3 -->
+      <div id="modal-maxpayne3" class="modal"><!-- MODAL - Max Payne 3 -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-maxpayne3')">&times;</span>
+          <div class="carousel-container">
+            <span class="prev" onclick="changeSlide(-1, 'maxpayne3')">&#10094;</span>
+            <div class="carousel" id="carousel-maxpayne3">
+              <img src="compras/carrosel/maxpayne3/maxpayne350.jpg" alt="Image 1">
+              <img src="compras/carrosel/maxpayne3/ppfju7t3.webp" alt="Image 2">
+              <img src="compras/carrosel/maxpayne3/MaxPayne610-1.jpg" alt="Image 3">
+            </div>
+            <span class="next" onclick="changeSlide(1, 'maxpayne3')">&#10095;</span>
+          </div>
+        </div>
+      </div><!-- MODAL - Max Payne 3 -->
+      
+      <div class="card" onclick="openModal('modal-gtatrilogy')">
+        <img src="img/cards/GTATrilogy.jpg" alt="Game Logo">
+        <h3>Grand Theft Auto: The Trilogy</h3>
+        <p>
+          <span class="pc">PC</span> <span class="playstation">PS4</span> <span class="playstation">PS5</span> <span class="xbox">Xbox</span>
+        </p>
+        <p class="price">R$320,00</p>
+        <a href="compras/gta-trilogy.html" class="buy-icon-button">Comprar</a>
+      </div><!-- CARD - GTA trilogy -->
+      <div id="modal-gtatrilogy" class="modal"><!-- MODAL - GTA Trilogy -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-gtatrilogy')">&times;</span>
+          <div class="carousel-container">
+            <span class="prev" onclick="changeSlide(-1, 'gtatrilogy')">&#10094;</span>
+            <div class="carousel" id="carousel-gtatrilogy">
+              <img src="compras/carrosel/gtatrilogy/gtaiv.png" alt="Image 1">
+              <img src="compras/carrosel/gtatrilogy/gtasanandreas.png" alt="Image 2">
+              <img src="compras/carrosel/gtatrilogy/gta-vice-city.png" alt="Image 3">
+            </div>
+            <span class="next" onclick="changeSlide(1, 'gtatrilogy')">&#10095;</span>
+          </div>
+        </div>
+      </div><!-- MODAL - GTA Trilogy -->
+
+      <div class="card" onclick="openModal('modal-bully')"><!-- CARD - Bully -->
           <img src="img/cards/bully.jpg" alt="Game Logo">
           <h3>Bully</h3>
-          <p><span class="pc">PC</span> <span class="playstation">PS4</span></p>
+          <p>
+            <span class="pc">PC</span> <span class="playstation">PS4</span>
+          </p>
           <p class="price">R$80,00</p>
           <a href="compras/bully.html" class="buy-icon-button">Comprar</a>
-      </div>
-    </section>
+      </div><!-- CARD - Bully -->
+      <div id="modal-bully" class="modal"><!-- MODAL - Bully -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-bully')">&times;</span>
+          <div class="carousel-container">
+            <span class="prev" onclick="changeSlide(-1, 'bully')">&#10094;</span>
+            <div class="carousel" id="carousel-bully">
+              <img src="compras/carrosel/bully/bully-20061016000508840-000.jpg" alt="Image 1">
+              <img src="compras/carrosel/bully/Bully_SE_Screenshots_13.jpg" alt="Image 2">
+              <img src="compras/carrosel/bully/0000006059.1920x1080.jpg" alt="Image 3">
+              <img src="compras/carrosel/bully/zgTT42VihuFWauxghFEnLf-1200-80.jpg" alt="Image 4">
+            </div>
+            <span class="next" onclick="changeSlide(1, 'bully')">&#10095;</span>
+          </div>
+        </div>
+      </div><!-- MODAL - Bully -->
+    </section><!-- Cards -->
+  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
