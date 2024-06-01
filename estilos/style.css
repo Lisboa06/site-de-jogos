@@ -334,6 +334,7 @@
 
 .carousel img {
   min-width: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
