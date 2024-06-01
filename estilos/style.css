@@ -362,3 +362,47 @@
   background-color: #000000cc;
   transition: .3s;
 }
+
+/* Rodapé */
+footer {
+  background-color: #090c13;
+  color: #e5f7f8;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #3d3d3d7c;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.person {
+  margin: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+.social-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+  color: #aaaaaa;
+  transform: scale(1.1);
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .person {
+      min-width: 100%;
+      text-align: center;
+  }
+  .social-links a {
+      display: block;
+      margin: 5px 0;
+  }
+}
