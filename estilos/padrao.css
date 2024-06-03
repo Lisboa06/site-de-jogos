@@ -46,5 +46,9 @@ body {
   width: 36px !important;
   margin: auto 5px;
 }
+
+.suporte {
+  cursor: no-drop !important;
+}
   
 /* BOOTSTRAP CABEÇALHO - Fim */
