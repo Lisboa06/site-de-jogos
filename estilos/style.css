@@ -1,90 +1,13 @@
+:root {
+  --neon-color-default: #d3ffe0af;
+  --neon-color: #00d9ff9d;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-/* 
-.container {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header {
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  padding: 8px;
-  font-family: sans-serif;
-}
-
- .socais {
-  width: 25%;
-}
-
-.logo img {
-  width: 50px;
-  cursor: pointer;
-}
-
-.menu {
-  text-align: left;
-}
-
-.menu nav a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  font-size: 18px;
-}
-.menu nav a:hover {
-  border-bottom: 1px solid rgb(236, 146, 11);
-  
-  
-  .sociais button {
-    background-color: #0016e000;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 0 5px;
-    filter: drop-shadow(0 0 11px #ffffff60);
-    transition: 0.4s;
-  }
-  .sociais button:hover {
-    filter: drop-shadow(0 0 12px #ffffffc5);
-    transition: 0.4s;
-  }
-  .sociais button img{
-    width: 25px;
-    
-  }
-  
-  .cabecalho .logo {
-    display: flex;
-    gap: 15px;
-    height: 100%;
-    padding: 14px;
-  }
-  
-  .cabecalho .menu {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .cabecalho .menu li a {
-    padding: 30px;
-    color: #e8e8e8;
-    font-weight: bolder;
-    font-size: 15px;
-  }
-  
-  .cabecalho .menu li a:hover {
-    border-bottom: 2px solid #fff;
-  }
-} */
 
 .home {
   display: flex;
@@ -93,7 +16,6 @@ header {
   font-family: sans-serif;
   color: white;
 }
-
 
 .home .imagem-fundo {
   width: 100%;
@@ -160,6 +82,90 @@ header {
 }
 
 /* CARDS */
+.cards-main-title {
+  font-size: 2.2em;
+  background-color: var(--bg-color1);
+  color: white;
+  margin: 0;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+}
+.neon-text {
+  font-family: 'Arial', sans-serif;
+  text-shadow: 
+      0 0 5px var(--neon-color-default), 
+      0 0 10px var(--neon-color-default), 
+      0 0 20px var(--neon-color-default), 
+      0 0 40px var(--neon-color), 
+      0 0 80px var(--neon-color), 
+      0 0 90px var(--neon-color), 
+      0 0 100px var(--neon-color), 
+      0 0 150px var(--neon-color);
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+      text-shadow: 
+          0 0 5px var(--neon-color-default), 
+          0 0 10px var(--neon-color-default), 
+          0 0 20px var(--neon-color-default), 
+          0 0 40px var(--neon-color), 
+          0 0 80px var(--neon-color), 
+          0 0 90px var(--neon-color), 
+          0 0 100px var(--neon-color), 
+          0 0 150px var(--neon-color);
+  }
+  to {
+      text-shadow: 
+          0 0 10px var(--neon-color-default), 
+          0 0 20px var(--neon-color-default), 
+          0 0 30px var(--neon-color), 
+          0 0 50px var(--neon-color), 
+          0 0 100px var(--neon-color), 
+          0 0 150px var(--neon-color), 
+          0 0 200px var(--neon-color), 
+          0 0 300px var(--neon-color);
+  }
+}
+.blink {animation: blink 3s infinite;}
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  89% {
+      opacity: 1;
+  }
+  92% {
+      opacity: .1;
+  }
+  95%{
+      opacity: 1;
+  }
+  98%{
+      opacity: 0.1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.blink2 {animation: blink2 4.5s infinite;}
+@keyframes blink2 {
+  0% {
+      opacity: 1;
+  }
+  45% {
+      opacity: 1;
+  }
+  48% {
+      opacity: 0.1;
+  }
+  50%, 100% {
+      opacity: 1;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -173,6 +179,8 @@ header {
   background: #14111a;
   color: #e6e6e2;
   display: flex;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: space-between;
   border: 1px solid #ffffff81;
   border-radius: 8px;
@@ -181,9 +189,9 @@ header {
   width: 300px;
   text-align: center;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 .card .playstation, .card .xbox, .card .pc {
-  /* display: inline-block; */
   text-align: center;
   font-size: .8em;
   border: 1px solid white;
@@ -226,6 +234,37 @@ header {
   font-size: 1em;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.card > h3 {
+  font-size: 1.5em;
+  margin: 0.25em 0 0;
+}
+
+.card p {
+  font-size: 1em;
+  margin: 0.3em 1em;
+}
+
+.card .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FFAB00;
+  margin: 0 0 0.5em;
+}
+
+.card .buy-icon-button {
+  background: #FFAB00;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 9px #00000098;
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
   /* margin: 1em 0; */
 }
 
@@ -235,4 +274,136 @@ header {
 
 .card:hover {
   transform: scale(1.01);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000e6;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 700px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: -.8vh;
+  right: 2vw;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 5;
+  filter: drop-shadow(0 0 8px black);
+}
+
+.close:hover,
+.close:focus {
+  color: #f05151;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  border: 2px solid #ffffff71;
+  width: 100%;
+  box-shadow: 0 0 16px #ffffff42;
+}
+
+.carousel img {
+  min-width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 2;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #000000cc;
+  transition: .3s;
+}
+
+/* Rodapé */
+footer {
+  background-color: #090c13;
+  color: #e5f7f8;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #3d3d3d7c;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.person {
+  margin: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+.social-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+  color: #aaaaaa;
+  transform: scale(1.1);
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .person {
+      min-width: 100%;
+      text-align: center;
+  }
+  .social-links a {
+      display: block;
+      margin: 5px 0;
+  }
 }
